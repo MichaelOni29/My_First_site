@@ -23,9 +23,12 @@
         
         <aside class="sidebar w-full md:w-80 text-white flex flex-col justify-between p-8 md:fixed md:top-0 md:bottom-0 md:left-0 z-10 shadow-xl">
             <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                
                 <div class="w-32 h-32 rounded-full gold-border border-4 overflow-hidden mb-6 bg-slate-700 flex items-center justify-center shadow-md">
-                    <i class="fa-solid fa-user-tie text-5xl text-slate-400"></i>
+                    <img id="profile-pic" src="" alt="Dr. Michael O. Oni" class="w-full h-full object-cover hidden">
+                    <i id="profile-icon" class="fa-solid fa-user-tie text-5xl text-slate-400"></i>
                 </div>
+                
                 <h1 class="text-2xl font-black tracking-tight mb-1">Dr. Michael O. Oni</h1>
                 <p class="text-sky-400 font-medium text-sm mb-4">Applied Mathematician & Researcher</p>
                 
@@ -35,7 +38,7 @@
 
                 <nav class="space-y-3 w-full text-sm font-semibold tracking-wide">
                     <a href="#about" class="block py-2 px-3 rounded hover:bg-slate-800 transition"><i class="fa-solid fa-address-card mr-3 text-sky-400"></i>About</a>
-                    <a href="#research" class="block py-2 px-3 rounded hover:bg-slate-800 transition"><i class="fa-solid fa-flask mr-3 text-sky-400"></i>Research Interests</a>
+                    <a href="#research" class="block py-2 px-3 rounded hover:bg-slate-800 transition"><i class="fa-solid fa-flask mr-3 text-sky-400"></i>Research Specialties</a>
                     <a href="#publications" class="block py-2 px-3 rounded hover:bg-slate-800 transition"><i class="fa-solid fa-book mr-3 text-sky-400"></i>Publications</a>
                     <a href="#teaching" class="block py-2 px-3 rounded hover:bg-slate-800 transition"><i class="fa-solid fa-chalkboard-user mr-3 text-sky-400"></i>Teaching & Service</a>
                 </nav>
@@ -44,10 +47,11 @@
             <div class="mt-8 pt-4 border-t border-slate-700 text-xs text-slate-400 space-y-2">
                 <div><i class="fa-solid fa-building-columns mr-2"></i>North-West University, SA</div>
                 <div><i class="fa-solid fa-building-columns mr-2"></i>Ahmadu Bello University, NG</div>
-                <div class="flex space-x-4 pt-3 text-lg text-slate-300">
-                    <a href="#" target="_blank" class="hover:text-white"><i class="fa-brands fa-researchgate"></i></a>
-                    <a href="#" target="_blank" class="hover:text-white"><i class="fa-solid fa-graduation-cap"></i></a>
-                    <a href="#" target="_blank" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+                <div class="flex space-x-4 pt-3 text-xl text-slate-300">
+                    <a href="https://www.researchgate.net/profile/Michael-Oni" target="_blank" class="hover:text-sky-400 transition" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                    <a href="https://scholar.google.com/citations?user=7PQsNQ4AAAAJ" target="_blank" class="hover:text-sky-400 transition" title="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/0000-0002-0272-4825" target="_blank" class="hover:text-sky-400 transition" title="ORCID iD"><i class="fa-brands fa-orcid text-emerald-400"></i></a>
+                    <a href="https://www.webofscience.com/wos/author/record/X-7347-2019" target="_blank" class="hover:text-sky-400 transition" title="Web of Science"><i class="fa-solid fa-square-w"></i></a>
                 </div>
             </div>
         </aside>
@@ -59,10 +63,10 @@
                     <div class="absolute top-0 left-0 w-2 h-full bg-[#0066CC]"></div>
                     <h2 class="text-3xl font-extrabold tracking-tight mb-4 text-[#002244]">Biography</h2>
                     <p class="text-slate-600 leading-relaxed mb-4">
-                        I am a Senior Lecturer in the Department of Mathematics at Ahmadu Bello University (ABU), Zaria, Nigeria, and currently a Postdoctoral Research Fellow at North-West University, South Africa. My academic journey began at ABU Zaria, where I completed my A-level, MSc, and PhD training in applied mathematics.
+                        I am a Senior Lecturer in the Department of Mathematics at Ahmadu Bello University (ABU), Zaria, Nigeria, and currently a Postdoctoral Research Fellow at North-West University, South Africa. My academic journey began at ABU Zaria, where I completed my advanced training, culminating in an MSc and PhD in Applied Mathematics.
                     </p>
                     <p class="text-slate-600 leading-relaxed">
-                        My work sits at the intersection of mathematical physics and high-performance computing. I focus on developing advanced numerical frameworks to solve highly non-linear, coupled boundary layer formulations modeling thermal management challenges in emerging microsystems.
+                        My work sits at the intersection of mathematical physics, thermal sciences, and high-performance computing. I focus on designing and implementing numerical frameworks to solve highly non-linear, coupled boundary layer formulations modeling complex multiphysics flow systems.
                     </p>
                 </div>
             </section>
@@ -75,22 +79,22 @@
                     <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100 hover:shadow-md transition">
                         <div class="text-2xl text-[#0066CC] mb-3"><i class="fa-solid fa-wave-square"></i></div>
                         <h3 class="font-bold text-lg mb-2">Multiphysics Fluid Dynamics</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Modeling magnetohydrodynamics (MHD), electroosmotic frameworks, and nanofluid dynamics in highly micro-confined channels.</p>
+                        <p class="text-slate-500 text-sm leading-relaxed">Modeling magnetohydrodynamics (MHD), electroosmotic flow fields, and nanofluid dynamics in specialized micro-channels.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100 hover:shadow-md transition">
                         <div class="text-2xl text-[#0066CC] mb-3"><i class="fa-solid fa-calculator"></i></div>
                         <h3 class="font-bold text-lg mb-2">Advanced Spectral Solvers</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Expert development and implementation of SCM, BSQLM, and SQLM schemes to resolve stiff, non-linear boundaries.</p>
+                        <p class="text-slate-500 text-sm leading-relaxed">Expert development and implementation of SCM, BSQLM, and SQLM algorithms to resolve highly coupled boundary problems.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100 hover:shadow-md transition">
                         <div class="text-2xl text-[#0066CC] mb-3"><i class="fa-solid fa-microchip"></i></div>
                         <h3 class="font-bold text-lg mb-2">Thermal Transport in 3D-ICs</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Designing enhanced mathematical cooling topologies for integrated electronics and enhanced microfluidic energy harvesters.</p>
+                        <p class="text-slate-500 text-sm leading-relaxed">Designing enhanced mathematical cooling topologies for microfluidic energy harvesters and semiconductor stacks.</p>
                     </div>
                     <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-100 hover:shadow-md transition">
                         <div class="text-2xl text-[#0066CC] mb-3"><i class="fa-solid fa-brain"></i></div>
                         <h3 class="font-bold text-lg mb-2">Deep Learning & PINNs</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Integrating standard numerical solvers with Physics-Informed Neural Networks in Python to pioneer hybrid thermal simulations.</p>
+                        <p class="text-slate-500 text-sm leading-relaxed">Integrating standard numerical solvers with Physics-Informed Neural Networks in Python to accelerate multi-parameter thermal models.</p>
                     </div>
                 </div>
             </section>
@@ -98,17 +102,17 @@
             <section id="publications" class="scroll-mt-12">
                 <div class="flex justify-between items-center mb-6">
                     <h2 class="text-2xl font-black text-[#002244] tracking-tight flex items-center">
-                        <span class="w-8 h-1 bg-[#D4AF37] mr-3"></span> Dynamic Research Feed
+                        <span class="w-8 h-1 bg-[#D4AF37] mr-3"></span> Verified Publication Feed
                     </h2>
                     <span class="text-xs font-semibold uppercase bg-emerald-100 text-emerald-800 px-2.5 py-1 rounded-full flex items-center shadow-xs">
-                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse mr-1.5"></span> Live Auto-Update
+                        <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse mr-1.5"></span> ORCID & WoS Connected
                     </span>
                 </div>
                 
                 <div id="publications-feed" class="space-y-4">
                     <div class="text-center py-12 text-slate-400 bg-white rounded-xl border border-dashed border-slate-200">
                         <i class="fa-solid fa-spinner animate-spin text-2xl mb-2 accent-text"></i>
-                        <p class="text-sm">Connecting safely to international citation engines...</p>
+                        <p class="text-sm">Querying cross-institutional records dynamically...</p>
                     </div>
                 </div>
             </section>
@@ -121,26 +125,26 @@
                     <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-xs space-y-4">
                         <div>
                             <span class="text-xs font-bold text-slate-400 block">POSTGRADUATE TRACK</span>
-                            <p class="text-sm text-slate-600 font-medium">Active supervisor of postgraduate candidates, developing hybrid matrix solvers for computational fluid dynamics dissertations.</p>
+                            <p class="text-sm text-slate-600 font-medium">Active supervisor of postgraduate candidates, developing hybrid numerical codes for complex fluid dynamics dissertations.</p>
                         </div>
                         <div class="border-t border-slate-100 pt-4">
-                            <span class="text-xs font-bold text-slate-400 block">CORE COURSES</span>
-                            <p class="text-sm text-slate-600 font-medium">Advanced Fluid Mechanics, Mathematical Methods, Real Analysis, and Numerical Computational Models.</p>
+                            <span class="text-xs font-bold text-slate-400 block">CORE UNIVERSITY COURSES</span>
+                            <p class="text-sm text-slate-600 font-medium">Advanced Fluid Mechanics, Mathematical Methods, Numerical Analysis, and Computational Mechanics.</p>
                         </div>
                     </div>
                 </div>
                 
                 <div>
                     <h2 class="text-2xl font-black text-[#002244] tracking-tight mb-6 flex items-center">
-                        <span class="w-6 h-1 bg-[#0066CC] mr-3"></span> Editorial & Journal Review
+                        <span class="w-6 h-1 bg-[#0066CC] mr-3"></span> Editorial Peer Review
                     </h2>
                     <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-xs">
                         <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                            Serving as an invited technical expert peer reviewer for top-tier international scientific venues, ensuring physical validity and mathematical rigor across fluid frameworks.
+                            Serving as an expert technical reviewer for leading international computational mechanics journals, verifying solution stability and physical validity.
                         </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 font-semibold rounded-md border border-slate-200">Propulsion and Power Research</span>
-                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 font-semibold rounded-md border border-slate-200">Fluid Mechanics</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 font-semibold rounded-md border border-slate-200">Fluid Dynamics</span>
                             <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 font-semibold rounded-md border border-slate-200">Thermal Engineering</span>
                         </div>
                     </div>
@@ -151,5 +155,5 @@
     </div>
 
     <script src="app.js"></script>
-</body>  
+</body>
 </html>
